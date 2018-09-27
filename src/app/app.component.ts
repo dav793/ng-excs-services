@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-import { RandomService } from './random.service';
-
 /**
  * - Cómo puedo hacer para crear un servicio que genere un numero aleatorio en su constructor, y lo provea mediante un método?
  * - Cómo puedo hacer para solicitar ese numero aleatorio desde un componente, que a su vez lo muestre en pantalla?
@@ -17,10 +15,10 @@ import { RandomService } from './random.service';
 })
 export class AppComponent {
 
-  constructor(private randomService: RandomService) {}
+  constructor() {}
 
   getRandomNumber(): number {
-    return this.randomService.getRandomNumber();
+    return 0;
   }
 
 }
